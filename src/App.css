@@ -1,0 +1,103 @@
+/* Fundos */
+body{
+  background-color: gray;
+}
+.App {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: Arial;
+}
+
+/* Chat */
+.mensagem-list {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  max-height: 100%;
+  background-color: #5d6368;
+  border: 3px solid rgb(44, 44, 44);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* UaiZap */
+.UaiZap{
+  margin: 0px auto;
+}
+
+/* Fundo atrás dos inputs */
+.mensagem-input {
+  display: flex;
+  align-items: center;
+  /* background-color: green; */
+  justify-content: flex-end;
+}
+
+/* Fundo dos inputs
+.mensagem-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* background-color: violet; 
+} */
+
+.input-remetente {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 85px;
+  /* background-color: violet; */
+}
+
+.input-conteudo {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  /* background-color: violet; */
+}
+
+/* Botão de enviar */
+.input-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Padrão das mensagens */
+.mensagem {
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* mensagem do remetente "eu" */
+.mensagem.eu {
+  align-self: flex-end;
+  background-color: #312e2e;
+  color: #fff;
+  text-align: right;
+  margin-left: auto;
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
