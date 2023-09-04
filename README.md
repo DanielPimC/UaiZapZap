@@ -17,4 +17,6 @@ Para executar o aplicativo localmente, siga estas etapas:
 
 2. Clone este repositório para o seu computador:
 
-   git clone https://github.com/DanielPimC/UaiZapZap.git
+'git clone https://github.com/DanielPimC/UaiZapZap.git'
+
+3. Digite 'npm install' e 'npm run start'
