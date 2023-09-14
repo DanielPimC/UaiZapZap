@@ -28,7 +28,7 @@ function Mensagem({
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <div>
         <input
           type="text"
           placeholder="Remetente"
