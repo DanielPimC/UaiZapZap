@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Mensagem from './components/mensagem';
+import Mensagem from './components/Mensagem'
+import { AppContainer, UaiZapTitle } from './components/Styled-Components';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,8 +22,15 @@ class App extends React.Component {
   };
 
   EnviarMensagem = () => {
-    const { remetente, conteudo } = this.state;
-    if (remetente.trim() !== '' && conteudo.trim() !== '') {
+    let { remetente, conteudo } = this.state;
+
+    if (remetente.trim() === '') {
+      remetente = 'eu';
+    } else {
+      remetente = remetente.toLowerCase();
+    }
+  
+    if (conteudo.trim() !== '') {
       const newMessage = { remetente, conteudo };
       this.setState((prevState) => ({
         mensagens: [...prevState.mensagens, newMessage],
@@ -31,6 +39,7 @@ class App extends React.Component {
       }));
     }
   };
+    
 
   ApertarEnter = (e) => {
     if (e.key === 'Enter') {
@@ -47,8 +56,8 @@ class App extends React.Component {
   render() {
     const { mensagens, remetente, conteudo } = this.state;
     return (
-      <div className="App">
-        <h2 className="UaiZap">UaiZap</h2>
+      <AppContainer className="App">
+        <UaiZapTitle className="UaiZap">UaiZap</UaiZapTitle>
         <Mensagem
           mensagens={mensagens}
           remetente={remetente}
@@ -59,7 +68,7 @@ class App extends React.Component {
           ApertarEnter={this.ApertarEnter}
           deletarMensagem={this.deletarMensagem}
         />
-      </div>
+      </AppContainer>
     );
   }
 }

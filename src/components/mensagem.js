@@ -1,18 +1,11 @@
 import React from 'react';
+import { MensagemList, InputRemetente, InputConteudo, InputButton } from './Styled-Components';
 
-function Mensagem({
-  mensagens,
-  remetente,
-  conteudo,
-  onChangeRemetente,
-  onChangeMensagem,
-  EnviarMensagem,
-  ApertarEnter,
-  deletarMensagem,
-}) {
+function Mensagem({ mensagens, remetente, conteudo, onChangeRemetente, onChangeMensagem, EnviarMensagem, ApertarEnter, deletarMensagem }) 
+{
   return (
     <div>
-      <div className="mensagem-list">
+      <MensagemList className="mensagem-list">
         {mensagens.map((mensagem, index) => (
           <div
             key={index}
@@ -27,9 +20,9 @@ function Mensagem({
             {mensagem.remetente === 'eu' && <div className="conteudo">{mensagem.conteudo}</div>}
           </div>
         ))}
-      </div>
+      </MensagemList>
       <div>
-        <input
+        <InputRemetente
           type="text"
           placeholder="Remetente"
           value={remetente}
@@ -37,7 +30,7 @@ function Mensagem({
           onKeyPress={ApertarEnter}
           className="input-remetente"
         />
-        <input
+        <InputConteudo
           type="text"
           placeholder="Mensagem"
           value={conteudo}
@@ -45,7 +38,7 @@ function Mensagem({
           onKeyPress={ApertarEnter}
           className="input-conteudo"
         />
-        <button className="input-button" onClick={EnviarMensagem}>Enviar</button>
+        <InputButton className="input-button" onClick={EnviarMensagem}>Enviar</InputButton>
       </div>
     </div>
   );
