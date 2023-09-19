@@ -1,4 +1,4 @@
-# UaiZap - Chat em React
+# UaiZapZap - Chat em React
 
 ## Descrição do Projeto
 O UaiZap é um aplicativo de chat simples construído em React que permite aos usuários enviar e receber mensagens. O aplicativo oferece as seguintes funcionalidades:
