@@ -8,7 +8,7 @@ O UaiZap é um aplicativo de chat simples construído em React que permite aos u
 - Possibilidade de excluir mensagens clicando duas vezes.
 
 ## Tecnologias Utilizadas
-- O aplicativo é desenvolvido utilizando a biblioteca React
+- O aplicativo é desenvolvido utilizando as bibliotecas React e Styled Components
 
 ## Como Utilizar
 Para executar o aplicativo localmente, siga estas etapas:

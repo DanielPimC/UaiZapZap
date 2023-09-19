@@ -57,7 +57,7 @@ class App extends React.Component {
     const { mensagens, remetente, conteudo } = this.state;
     return (
       <AppContainer className="App">
-        <UaiZapTitle className="UaiZap">UaiZap</UaiZapTitle>
+        <UaiZapTitle className="UaiZap">UaiZapZap</UaiZapTitle>
         <Mensagem
           mensagens={mensagens}
           remetente={remetente}
